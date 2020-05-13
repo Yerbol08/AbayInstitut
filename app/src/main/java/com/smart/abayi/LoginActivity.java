@@ -14,10 +14,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        btnSignIn = (Button) findViewById(R.id.btnSign);
+        btnSignIn = findViewById(R.id.btnSign);
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //intent MainActivity
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
