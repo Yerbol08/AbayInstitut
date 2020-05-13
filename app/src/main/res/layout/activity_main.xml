@@ -10,6 +10,7 @@
     android:fitsSystemWindows="true"
     android:id="@+id/drawer_layout">
 
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -21,7 +22,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/toolbar"
-                android:background="@color/colorPrimary"/>
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:titleTextColor="@color/colorWhite"
+                />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tablayout"
@@ -29,7 +34,8 @@
                 android:layout_height="wrap_content"
                 app:tabIndicatorColor="@android:color/white"
                 app:tabIndicatorHeight="6dp"
-                app:tabSelectedTextColor="@android:color/white">
+                app:tabSelectedTextColor="@android:color/white"
+                >
 
 
             </com.google.android.material.tabs.TabLayout>
@@ -50,11 +56,11 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         android:layout_gravity="start"
+        android:fitsSystemWindows="true"
         app:menu="@menu/menu_navigation"
-        app:headerLayout="@layout/navigation_header"/>
-
-
-
-
-
+        app:headerLayout="@layout/navigation_header"
+        android:background="@color/colorGray"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconTint="@android:color/white"
+        android:theme="@style/NavigationTheme"/>
 </androidx.drawerlayout.widget.DrawerLayout>

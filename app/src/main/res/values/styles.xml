@@ -15,4 +15,8 @@
         <item name="colorControlNormal">@color/colorWhite</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">60dp</item><!-- menu item height- vary as u need -->
+    </style>
 </resources>

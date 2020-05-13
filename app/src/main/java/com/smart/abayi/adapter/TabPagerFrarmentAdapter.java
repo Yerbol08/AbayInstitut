@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.smart.abayi.fragment.HomeFragment;
+import com.smart.abayi.fragment.home.HomeFragment;
 
 public class TabPagerFrarmentAdapter  extends FragmentPagerAdapter {
 
@@ -14,9 +14,9 @@ public class TabPagerFrarmentAdapter  extends FragmentPagerAdapter {
     public TabPagerFrarmentAdapter(FragmentManager fm){
         super(fm);
         tabs = new String[]{
-                "Tab1",
-                "Tab2",
-                "Tab3"
+                "Новости",
+                "Форум",
+                "Обсуждения"
         };
     }
 
